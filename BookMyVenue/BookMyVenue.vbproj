@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{38DE4C44-10FC-44FA-BA90-E3EFEF78B9B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BookMyVenue.My.MyApplication</StartupObject>
+    <RootNamespace>BookMyVenue</RootNamespace>
+    <AssemblyName>BookMyVenue</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BookMyVenue.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BookMyVenue.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADDVENUEIMAGES.Designer.vb">
+      <DependentUpon>ADDVENUEIMAGES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADDVENUEIMAGES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINdashboard.Designer.vb">
+      <DependentUpon>ADMINdashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINdashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINlogin.Designer.vb">
+      <DependentUpon>ADMINlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APARTMENTbooking.Designer.vb">
+      <DependentUpon>APARTMENTbooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APARTMENTbooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BANQUETHALLbooking.Designer.vb">
+      <DependentUpon>BANQUETHALLbooking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BANQUETHALLbooking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookMyVenueDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookMyVenueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookMyVenueDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookMyVenueDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="childCHANGEPASSWORDadmin.Designer.vb">
+      <DependentUpon>childCHANGEPASSWORDadmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="childCHANGEPASSWORDadmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childCHANGEPASSWORDcustomer.Designer.vb">
+      <DependentUpon>childCHANGEPASSWORDcustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="childCHANGEPASSWORDcustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childCHANGEPASSWORDvenue.Designer.vb">
+      <DependentUpon>childCHANGEPASSWORDvenue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="childCHANGEPASSWORDvenue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildEDITBOOKINGSADMIN.Designer.vb">
+      <DependentUpon>ChildEDITBOOKINGSADMIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildEDITBOOKINGSADMIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childEDITVENUESADMIN.Designer.vb">
+      <DependentUpon>childEDITVENUESADMIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="childEDITVENUESADMIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childVIEWBOOKINGcustomer.Designer.vb">
+      <DependentUpon>childVIEWBOOKINGcustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="childVIEWBOOKINGcustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildVIEWBOOKINGSADMINvb.Designer.vb">
+      <DependentUpon>ChildVIEWBOOKINGSADMINvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildVIEWBOOKINGSADMINvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childVIEWBOOKINGSvenue.Designer.vb">
+      <DependentUpon>childVIEWBOOKINGSvenue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="childVIEWBOOKINGSvenue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childVIEWVENUESADMIN.Designer.vb">
+      <DependentUpon>childVIEWVENUESADMIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="childVIEWVENUESADMIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOMERdashboard.Designer.vb">
+      <DependentUpon>CUSTOMERdashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMERdashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOMERlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOMERlogin.Designer.vb">
+      <DependentUpon>CUSTOMERlogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOMER_REGISRATION.Designer.vb">
+      <DependentUpon>CUSTOMER_REGISRATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER_REGISRATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homepage.Designer.vb">
+      <DependentUpon>homepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModConnection.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NEWBOOKING.Designer.vb">
+      <DependentUpon>NEWBOOKING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEWBOOKING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATION.Designer.vb">
+      <DependentUpon>REGISTRATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REGISTRATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENUEOWNERdashboard.Designer.vb">
+      <DependentUpon>VENUEOWNERdashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENUEOWNERdashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENUEOWNERlogin.Designer.vb">
+      <DependentUpon>VENUEOWNERlogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENUEOWNERlogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENUEOWNER_REGISTRATION.Designer.vb">
+      <DependentUpon>VENUEOWNER_REGISTRATION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VENUEOWNER_REGISTRATION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ADDVENUEIMAGES.resx">
+      <DependentUpon>ADDVENUEIMAGES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINdashboard.resx">
+      <DependentUpon>ADMINdashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINlogin.resx">
+      <DependentUpon>ADMINlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APARTMENTbooking.resx">
+      <DependentUpon>APARTMENTbooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BANQUETHALLbooking.resx">
+      <DependentUpon>BANQUETHALLbooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childCHANGEPASSWORDadmin.resx">
+      <DependentUpon>childCHANGEPASSWORDadmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childCHANGEPASSWORDcustomer.resx">
+      <DependentUpon>childCHANGEPASSWORDcustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childCHANGEPASSWORDvenue.resx">
+      <DependentUpon>childCHANGEPASSWORDvenue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildEDITBOOKINGSADMIN.resx">
+      <DependentUpon>ChildEDITBOOKINGSADMIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childEDITVENUESADMIN.resx">
+      <DependentUpon>childEDITVENUESADMIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childVIEWBOOKINGcustomer.resx">
+      <DependentUpon>childVIEWBOOKINGcustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildVIEWBOOKINGSADMINvb.resx">
+      <DependentUpon>ChildVIEWBOOKINGSADMINvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childVIEWBOOKINGSvenue.resx">
+      <DependentUpon>childVIEWBOOKINGSvenue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childVIEWVENUESADMIN.resx">
+      <DependentUpon>childVIEWVENUESADMIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOMERdashboard.resx">
+      <DependentUpon>CUSTOMERdashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOMERlogin.resx">
+      <DependentUpon>CUSTOMERlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOMER_REGISRATION.resx">
+      <DependentUpon>CUSTOMER_REGISRATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homepage.resx">
+      <DependentUpon>homepage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEWBOOKING.resx">
+      <DependentUpon>NEWBOOKING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTRATION.resx">
+      <DependentUpon>REGISTRATION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENUEOWNERdashboard.resx">
+      <DependentUpon>VENUEOWNERdashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENUEOWNERlogin.resx">
+      <DependentUpon>VENUEOWNERlogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENUEOWNER_REGISTRATION.resx">
+      <DependentUpon>VENUEOWNER_REGISTRATION.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BookMyVenueDataSet.xsc">
+      <DependentUpon>BookMyVenueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookMyVenueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookMyVenueDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookMyVenueDataSet.xss">
+      <DependentUpon>BookMyVenueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookMyVenueDataSet1.xsc">
+      <DependentUpon>BookMyVenueDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BookMyVenueDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookMyVenueDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookMyVenueDataSet1.xss">
+      <DependentUpon>BookMyVenueDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BookMyVenue.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BookMyVenue.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\homepage3.jpg" />
+    <None Include="Resources\homepage2.jpg" />
+    <None Include="Resources\homepage1.jpg" />
+    <None Include="Resources\homepage4.jpg" />
+    <None Include="Resources\homepage1.bmp" />
+    <None Include="Resources\Free-download-Pastel-Green-Aesthetic-Wallpaper-HD-768x4801.jpg" />
+    <None Include="Resources\hide1.png" />
+    <None Include="Resources\villas.png" />
+    <None Include="Resources\clubhouse.png" />
+    <None Include="Resources\gardens.png" />
+    <None Include="Resources\banquethall.png" />
+    <None Include="Resources\resort.png" />
+    <None Include="Resources\apartment_flat1.png" />
+    <None Include="Resources\cafe.png" />
+    <None Include="Resources\apartment_flat.png" />
+    <None Include="Resources\viewvenues1.png" />
+    <None Include="Resources\apartt.jpg" />
+    <None Include="Resources\villlaaa.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\show.png" />
+    <None Include="Resources\Admin.png" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\croplogo.png" />
+    <None Include="Resources\logo-color %282%29.bmp" />
+    <None Include="Resources\addcus.png" />
+    <None Include="Resources\addvenue.png" />
+    <None Include="Resources\edit1.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\viewvenues.png" />
+    <None Include="Resources\viewbookingss.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\viewbookings.png" />
+    <None Include="Resources\logo-color1.png" />
+    <None Include="Resources\logo-color.png" />
+    <None Include="Resources\bbb-removebg-preview.png" />
+    <None Include="Resources\bgg2.png" />
+    <None Include="Resources\bgg1.png" />
+    <None Include="Resources\bgg.png" />
+    <None Include="Resources\bg1.png" />
+    <None Include="Resources\07a01ef3c2f8ddddc5f241bdb3293cbf.jpg" />
+    <None Include="Resources\download %283%29.jpg" />
+    <None Include="Resources\bdb05e4c6befea0fcab308398d25a320.jpg" />
+    <None Include="Resources\bg.png" />
+    <None Include="Resources\balloons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
