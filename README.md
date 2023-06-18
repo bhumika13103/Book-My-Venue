@@ -1,2 +1,2 @@
-# book_my_venue
+# BookMyVenue
 BookMyVenue is a window application developed using VB.NET and ADO.NET. It is used to book various types of venues conviniently.
